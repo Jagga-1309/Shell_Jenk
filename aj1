@@ -4,3 +4,4 @@ read n1
 read n2
 diff=`expr $n1 - $n2`
 echo The diff is $diff
+echo The result is $diff
