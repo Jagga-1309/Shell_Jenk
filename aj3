@@ -1,0 +1,15 @@
+#!/bin/bash
+echo Enter the path of file or directory or link
+read path
+if [ -f $path ]
+then
+echo The psth is a file
+elif [ -d $path ]
+then
+echo The path is a directory
+elif [ -L $path ]
+then
+echo The path is a link
+else
+echo The path does not esist
+fi
